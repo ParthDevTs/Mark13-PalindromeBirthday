@@ -10,22 +10,31 @@ function App() {
     setMessage("");
   }
   function addMessage() {
-    let birthdateArr = birthdate.split("-");
-    let second = "" + birthdateArr[0];
-    let first = "" + birthdateArr[2] + birthdateArr[1];
-    let isPalindrome = true;
-    console.log(first, second);
-    for (let i = 0, j = second.length - 1; i < first.length, j >= 0; i++, j--) {
-      if (first[i] !== second[j]) {
-        isPalindrome = false;
-        break;
-      }
-    }
-
-    if (isPalindrome === true) {
-      setMessage("The entered birthdate " + birthdate + " is Palidrome");
+    if (birthdate === "") {
+      setMessage("Please enter birthdate first");
     } else {
-      setMessage("The entered birthdate " + birthdate + " is not Palidrome");
+      let birthdateArr = birthdate.split("-");
+      let second = "" + birthdateArr[0];
+      let first = "" + birthdateArr[2] + birthdateArr[1];
+      let isPalindrome = true;
+      let secondR = "";
+
+      for (let i = second.length - 1; i >= 0; i--) {
+        secondR += second[i];
+      }
+
+      for (let i = 0; i < first.length; i++) {
+        if (first[i] !== secondR[i]) {
+          isPalindrome = false;
+          break;
+        }
+      }
+
+      if (isPalindrome === true) {
+        setMessage("The entered birthdate " + birthdate + " is Palidrome");
+      } else {
+        setMessage("The entered birthdate " + birthdate + " is not Palidrome");
+      }
     }
   }
 
