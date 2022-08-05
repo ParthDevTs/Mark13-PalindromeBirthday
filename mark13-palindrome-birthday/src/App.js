@@ -30,10 +30,17 @@ function App() {
         }
       }
 
+      let birthdate_r = "";
+      for (let i = birthdate.length - 1; i >= 0; i--) {
+        birthdate_r += birthdate[i];
+      }
+
       if (isPalindrome === true) {
-        setMessage("The entered birthdate " + birthdate + " is Palidrome");
+        setMessage("The entered birthdate " + birthdate_r + " is Palidrome");
       } else {
-        setMessage("The entered birthdate " + birthdate + " is not Palidrome");
+        setMessage(
+          "The entered birthdate " + birthdate_r + " is not Palidrome"
+        );
       }
     }
   }
