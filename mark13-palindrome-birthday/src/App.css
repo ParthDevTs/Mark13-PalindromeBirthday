@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  background-color: #282c34;
+  overflow: hidden;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.main {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input__box {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+
+  color: #61dafb;
+  border: solid 0.1rem #61dafb;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  box-shadow: #61dafb 0rem 0rem 2rem, inset #61dafb 0rem 0rem 1rem;
+}
+
+#birthday {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: #61dafb;
+  border: 0;
+  font-size: 1.2rem;
+  text-shadow: 0rem 0rem 0.5rem black;
+  border-radius: 0.4rem;
+  text-align: center;
+  box-shadow: #61dafb 0rem 0rem 1rem, inset #61dafb 0rem 0rem 0.8rem;
+}
+
+.birthday__label {
+  font-family: monospace;
+  font-size: 1.3rem;
+  text-shadow: 0rem 0rem 1rem white;
+  padding: 0.2rem;
+}
+
+.output__box {
+  margin: 3rem;
+  height: 3rem;
+  width: 50rem;
+  box-shadow: #61dafb 0rem 0rem 2rem, inset #61dafb 0rem 0rem 0.9rem;
+  border-radius: 1rem;
+  border: #61dafb 0.1rem solid;
+  padding: 3rem;
+  background-color: black;
+  color: #61dafb;
+}
+
+.checkDate {
+  margin: 2.5rem;
+  font-family: monospace;
+  background-color: transparent;
+  color: #61dafb;
+  border: 0.1rem solid #61dafb;
+  box-shadow: #61dafb 0rem 0rem 1rem, inset #61dafb 0rem 0rem 0.8rem;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+.checkDate:hover {
+  box-shadow: #61dafb 0rem 0rem 2rem, inset #61dafb 0rem 0rem 0.8rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
