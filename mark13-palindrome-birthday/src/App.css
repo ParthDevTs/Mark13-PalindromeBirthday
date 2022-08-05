@@ -5,6 +5,12 @@
   overflow: hidden;
 }
 
+h1 {
+  font-family: fantasy;
+  color: white;
+  text-shadow: #61dafb 0 0 2rem;
+}
+
 .App-logo {
   height: 10vmin;
   pointer-events: none;
@@ -84,6 +90,8 @@
   padding: 3rem;
   background-color: black;
   color: #61dafb;
+  font-family: monospace;
+  font-size: 1.5rem;
 }
 
 .checkDate {

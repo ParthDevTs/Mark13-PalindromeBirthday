@@ -49,7 +49,9 @@ function App() {
         <button onClick={addMessage} className="checkDate">
           Check Birthdate
         </button>
-        <div className="output__box">{message}</div>
+        <div className="output__box">
+          The entered birthdate ({birthdate}) {message}
+        </div>
       </div>
     </div>
   );
