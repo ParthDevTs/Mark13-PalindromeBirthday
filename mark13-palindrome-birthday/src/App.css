@@ -31,6 +31,7 @@ h1 {
   font-size: calc(10px + 2vmin);
   color: white;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .App-link {
@@ -92,6 +93,7 @@ h1 {
   color: #61dafb;
   font-family: monospace;
   font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .checkDate {
@@ -107,6 +109,19 @@ h1 {
 
 .checkDate:hover {
   box-shadow: #61dafb 0rem 0rem 2rem, inset #61dafb 0rem 0rem 0.8rem;
+}
+
+.made {
+  position: absolute;
+  top: 50%;
+  right: 10rem;
+  font-size: 0.6rem;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 0.8rem #61dafb;
+}
+.heart {
+  font-size: 1rem;
+  margin-left: 0.2rem;
 }
 
 @keyframes App-logo-spin {

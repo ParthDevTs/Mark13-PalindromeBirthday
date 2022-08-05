@@ -7,6 +7,7 @@ function App() {
   const [message, setMessage] = useState("");
   function getBirthday(event) {
     setBirthdate(event.target.value);
+    setMessage("");
   }
   function addMessage() {
     let birthdateArr = birthdate.split("-");
@@ -22,9 +23,9 @@ function App() {
     }
 
     if (isPalindrome === true) {
-      setMessage("Is Palidrome");
+      setMessage("The entered birthdate " + birthdate + " is Palidrome");
     } else {
-      setMessage("is not palindrome");
+      setMessage("The entered birthdate " + birthdate + " is not Palidrome");
     }
   }
 
@@ -33,6 +34,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Palindrome Birthday</h1>
+        <p className="made">
+          -Made with <span className="heart">❤️</span> by Parth Kathuria.
+        </p>
       </header>
       <div className="main">
         <div className="input__box">
@@ -49,9 +53,7 @@ function App() {
         <button onClick={addMessage} className="checkDate">
           Check Birthdate
         </button>
-        <div className="output__box">
-          The entered birthdate ({birthdate}) {message}
-        </div>
+        <div className="output__box">{message}</div>
       </div>
     </div>
   );
